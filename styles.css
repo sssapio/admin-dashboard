@@ -1,0 +1,128 @@
+:root {
+  --blue: #1992d4;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.dash-nav {
+  background-color: var(--blue);
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.dash-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+header {
+  height: 150px;
+  padding: 10px 50px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  background-color: #e2e8f0;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  line-height: 20px;
+  outline: none;
+  padding: 5px;
+}
+ul {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+  background-color: var(--blue);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.main {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 20px 30px;
+  gap: 10px;
+}
+.normal {
+  display: flex;
+  justify-content: space-between;
+}
+.morgan {
+  font-size: 20px;
+}
+.project-card {
+  border-left: 5px solid #f0b429;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 20px;
+}
+.project-text {
+  color: #636363;
+  font-size: 14px;
+}
+.project-header {
+  font-weight: bold;
+}
+section > p {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.announcements {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.a-card {
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+}
+.a-text {
+  color: #636363;
+  font-size: 14px;
+}
+.a-header {
+  font-weight: bold;
+}
